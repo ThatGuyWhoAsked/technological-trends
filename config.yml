@@ -4,7 +4,7 @@ backend:
   branch: main # The branch to update
   base_url: https://api.decapcms.org
   auth_endpoint: /auth
-  app_id: <YOUR_CLIENT_ID_FROM_GITHUB> # Paste your Client ID here
+  app_id: Ov23liXBXmGwOH1zLjY4 # Paste your Client ID here
 
 media_folder: "assets/images" # Where uploaded images will be stored
 public_folder: "/assets/images" # The public path to the media folder
