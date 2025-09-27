@@ -1,0 +1,33 @@
+backend:
+  name: github
+  repo: ThatGuyWhoAsked/technological-trends # Your GitHub username and repository name
+  branch: main # The branch to update
+  base_url: https://api.decapcms.org
+  auth_endpoint: /auth
+  app_id: <YOUR_CLIENT_ID_FROM_GITHUB> # Paste your Client ID here
+
+media_folder: "assets/images" # Where uploaded images will be stored
+public_folder: "/assets/images" # The public path to the media folder
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "about.html"
+        label: "About Page"
+        name: "about"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - file: "issues.html"
+        label: "Archive Page"
+        name: "issues"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - file: "contact.html"
+        label: "Contact Page"
+        name: "contact"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
