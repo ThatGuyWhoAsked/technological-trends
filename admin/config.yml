@@ -1,0 +1,39 @@
+backend:
+  name: github
+  repo: ThatGuyWhoAsked/technological-trends
+  branch: main
+  base_url: https://api.decapcms.org
+  auth_endpoint: /auth
+  app_id: Ov23liXBXmGwOH1zLjY4
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "about.html"
+        label: "About Page"
+        name: "about"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - file: "subscribe.html"
+        label: "Subscribe Page"
+        name: "subscribe"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - file: "issues.html"
+        label: "Archive Page"
+        name: "issues"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - file: "contact.html"
+        label: "Contact Page"
+        name: "contact"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
