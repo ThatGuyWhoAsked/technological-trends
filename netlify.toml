@@ -5,25 +5,7 @@
 [build.environment]
   NODE_VERSION = "16"
 
-# Enable git-gateway for local development
-[[plugins]]
-  package = "netlify-plugin-git-gateway"
-
-# Enable CORS for local development
-[[headers]]
-  for = "/*"
-  [headers.values]
-    Access-Control-Allow-Origin = "*"
-    Access-Control-Allow-Methods = "GET, POST, PUT, DELETE, OPTIONS"
-    Access-Control-Allow-Headers = "Content-Type, Authorization"
-
 # Redirects for SPA
-[[redirects]]
-  from = "/admin/*"
-  to = "/admin/index.html"
-  status = 200
-  force = true
-
 [[redirects]]
   from = "/*"
   to = "/index.html"

@@ -4,93 +4,40 @@ A modern, accessible, and interactive school newsletter website focused on techn
 
 ## Features
 
-- **Responsive Design**: Works on all device sizes
-- **Accessibility**: Built with WCAG guidelines in mind
-- **Interactive Elements**: Custom cursor effects and hover states
-- **Modern UI**: Clean and engaging user interface
-- **Content Management**: Powered by Decap CMS with GitHub backend
-- **Git-based Workflow**: All content changes are tracked in Git
-- **Secure Authentication**: OAuth with GitHub
-- **Media Management**: Built-in image upload and management
+- **Responsive Design**: Looks great on all devices
+- **Modern UI**: Clean and professional interface
+- **Easy Deployment**: Simple deployment to GitHub Pages
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
-- Node.js (v16 or higher)
-- npm (v7 or higher)
-- GitHub account
-- (Optional) Custom domain (if not using GitHub Pages)
+- A modern web browser
+- Git (optional)
 
-### 🛠️ Installation
+### Installation
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/ThatGuyWhoAsked/technological-trends.git
+   git clone https://github.com/your-username/technological-trends.git
    cd technological-trends
    ```
 
+2. Open `index.html` in your web browser to view the site locally.
+
+## Development
+
+To serve the site locally with live reload:
+
+1. Install Node.js if you haven't already
 2. Install dependencies:
    ```bash
    npm install
    ```
-
-3. Create a `.env` file based on the example:
-   ```bash
-   cp .env.example .env
-   ```
-
-4. Set up GitHub OAuth App:
-   - Go to [GitHub Developer Settings](https://github.com/settings/developers)
-   - Click "New OAuth App"
-   - Fill in:
-     - **Application name**: Your Site Name
-     - **Homepage URL**: `https://your-username.github.io/technological-trends` (or your custom domain)
-     - **Authorization callback URL**: `https://api.decapcms.org/auth/done`
-   - Copy the Client ID and generate a Client Secret
-   - Update your `.env` file with these credentials
-
-5. Start the development server:
+3. Start the development server:
    ```bash
    npm start
    ```
-
-6. Open your browser and navigate to `http://localhost:3000`
-
-### 🔧 Building for Production
-
-1. Build the project:
-   ```bash
-   npm run build
-   ```
-
-2. Preview the production build locally:
-   ```bash
-   npm run preview
-   ```
-
-3. Deploy to GitHub Pages:
-   ```bash
-   npm run deploy
-   ```
-   This will build the project and deploy it to the `gh-pages` branch.
-
-## 🔒 Security Notes
-
-- Never commit your `.env` file
-- The GitHub OAuth Client Secret should remain private
-- The `public` directory is automatically generated - do not commit it
-
-## 🛠 Development
-
-### Available Scripts
-
-- `npm start` - Start the development server with live reload
-- `npm run build` - Build the project for production
-- `npm run preview` - Preview the production build locally
-- `npm run deploy` - Build and deploy to GitHub Pages
-- `npm run lint` - Run linter
-- `npm run format` - Format code using Prettier
 
 ## Deployment
 
