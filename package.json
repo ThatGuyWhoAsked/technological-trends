@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "browser-sync start --server --files \"**/*.html, **/*.css, **/*.js\"",
-    "build": "echo 'Build complete'",
+    "build": "mkdir -p public && cp -r static public/ && cp -r *.html public/ && cp -r *.css public/ && cp -r *.js public/ && echo 'Build complete'",
     "preview": "npx serve -s",
-    "deploy": "npm run build && npx gh-pages -d .",
+    "deploy": "npm run build && npx gh-pages -d public/",
     "lint:css": "stylelint \"**/*.css\"",
     "lint:js": "eslint . --ext .js",
     "lint": "npm run lint:css && npm run lint:js",
