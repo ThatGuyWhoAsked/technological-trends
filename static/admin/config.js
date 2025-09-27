@@ -17,6 +17,7 @@ window.CMS_CONFIGURATION = {
       name: 'github',
       repo: 'ThatGuyWhoAsked/technological-trends',
       branch: 'main',
+      base_url: 'https://thatguywhoasked.github.io/technological-trends',
       site_domain: 'https://thatguywhoasked.github.io/technological-trends',
       auth_endpoint: 'https://api.decapcms.org/auth'
     }
