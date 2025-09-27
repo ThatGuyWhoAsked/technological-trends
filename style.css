@@ -8,6 +8,15 @@
     --font-stack: 'Segoe UI', system-ui, -apple-system, sans-serif;
 }
 
+/* Light Mode Variables */
+.light-mode {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --text-muted: #666666;
+    --primary-color: #0077ff;
+    --primary-hover: #0055cc;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;

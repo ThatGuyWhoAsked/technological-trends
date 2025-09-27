@@ -54,6 +54,31 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.addEventListener('focusin', handleHover, true);
     document.body.addEventListener('focusout', handleHover, true);
 
+    // Theme toggle functionality
+    const themeToggle = document.getElementById('theme-toggle');
+    if (themeToggle) {
+        // Apply saved theme preference
+        if (localStorage.getItem('theme') === 'light') {
+            document.documentElement.classList.add('light-mode');
+            themeToggle.textContent = '🌙';
+        } else {
+            themeToggle.textContent = '☀️';
+        }
+
+        // Toggle theme on button click
+        themeToggle.addEventListener('click', () => {
+            if (document.documentElement.classList.contains('light-mode')) {
+                document.documentElement.classList.remove('light-mode');
+                localStorage.setItem('theme', 'dark');
+                themeToggle.textContent = '☀️';
+            } else {
+                document.documentElement.classList.add('light-mode');
+                localStorage.setItem('theme', 'light');
+                themeToggle.textContent = '🌙';
+            }
+        });
+    }
+
     // Cleanup function
     return () => {
         document.removeEventListener('mousemove', handleMouseMove);
