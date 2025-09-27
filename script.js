@@ -1,11 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
     const cursorGlow = document.getElementById('cursor-glow');
+    const interactiveBg = document.getElementById('interactive-bg');
 
-    if (!cursorGlow) return;
+    if (!cursorGlow || !interactiveBg) return;
 
     document.addEventListener('mousemove', (e) => {
-        cursorGlow.style.left = `${e.clientX}px`;
-        cursorGlow.style.top = `${e.clientY}px`;
+        const { clientX, clientY } = e;
+        cursorGlow.style.left = `${clientX}px`;
+        cursorGlow.style.top = `${clientY}px`;
+
+        interactiveBg.style.setProperty('--mouse-x', `${clientX}px`);
+        interactiveBg.style.setProperty('--mouse-y', `${clientY}px`);
     });
 
     // Add hover effect for interactive elements
