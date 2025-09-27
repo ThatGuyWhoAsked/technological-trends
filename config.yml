@@ -19,6 +19,12 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
+      - file: "subscribe.html"
+        label: "Subscribe Page"
+        name: "subscribe"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
       - file: "issues.html"
         label: "Archive Page"
         name: "issues"
