@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+    <!-- Skip to main content link for keyboard users -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <!-- Interactive background element -->
     <div id="interactive-bg"></div>
     <!-- Custom cursor glow element -->
@@ -24,7 +27,7 @@
         </div>
     </header>
 
-    <main class="container">
+    <main id="main-content" class="container" tabindex="-1">
         <!-- Hero Section -->
         <section class="hero">
             <h1>Stay Ahead with Technological Trends</h1>
@@ -41,34 +44,29 @@
             <div class="card-grid">
                 <!-- Article 1 -->
                 <div class="card">
-                    <img src="http://static.photos/technology/640x360/1" alt="AI in Education">
+                    <img src="https://source.unsplash.com/random/640x360/?ai,education,technology" alt="AI in Education" loading="lazy">
                     <div class="card-content">
                         <h3>How AI is Transforming Classroom Learning</h3>
-                        <p class="card-meta">May 15, 2023 • 5 min read</p>
-                        <a href="#">Read more &rarr;</a>
-                    </div>
-                </div>
                 <!-- Article 2 -->
                 <div class="card">
-                    <img src="http://static.photos/technology/640x360/2" alt="Quantum Computing">
+                    <img src="https://source.unsplash.com/random/640x360/?quantum,computing,technology" alt="Quantum Computing" loading="lazy">
                     <div class="card-content">
-                        <h3>Quantum Computing: The Next Frontier</h3>
-                        <p class="card-meta">April 28, 2023 • 7 min read</p>
+                        <h3>The Future of Quantum Computing</h3>
+                        <p class="card-meta">May 10, 2023 • 7 min read</p>
                         <a href="#">Read more &rarr;</a>
                     </div>
                 </div>
                 <!-- Article 3 -->
                 <div class="card">
-                    <img src="http://static.photos/technology/640x360/3" alt="Metaverse">
+                    <img src="https://source.unsplash.com/random/640x360/?blockchain,technology" alt="Blockchain" loading="lazy">
                     <div class="card-content">
-                        <h3>The Metaverse in Education</h3>
-                        <p class="card-meta">April 10, 2023 • 6 min read</p>
+                        <h3>Blockchain Beyond Cryptocurrency</h3>
+                        <p class="card-meta">May 5, 2023 • 6 min read</p>
                         <a href="#">Read more &rarr;</a>
                     </div>
                 </div>
             </div>
         </section>
-    </main>
 
     <footer class="site-footer"><p>&copy; 2024 Technological Trends. All Rights Reserved.</p></footer>
     <script src="script.js"></script>

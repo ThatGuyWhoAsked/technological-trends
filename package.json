@@ -1,0 +1,36 @@
+{
+  "name": "technological-trends",
+  "version": "1.0.0",
+  "description": "A modern school newsletter website focused on technology trends",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --server --files \"**/*.html, **/*.css, **/*.js\"",
+    "lint:css": "stylelint \"**/*.css\"",
+    "lint:js": "eslint . --ext .js",
+    "lint": "npm run lint:css && npm run lint:js",
+    "format": "prettier --write \"**/*.{js,css,html,md}\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "newsletter",
+    "technology",
+    "education",
+    "web"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.27.10",
+    "eslint": "^8.20.0",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.7.1",
+    "stylelint": "^14.11.0",
+    "stylelint-config-standard": "^28.0.0"
+  },
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11"
+  ]
+}
