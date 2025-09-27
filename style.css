@@ -8,6 +8,15 @@ body {
     background: radial-gradient(circle at top left, #1e1e2f, #0a0a0f);
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     color: white;
+    padding: 20px;
+}
+
+/* Main container */
+.main-container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    gap: 20px;
 }
 
 /* Glass container */
@@ -18,8 +27,7 @@ body {
     text-align: center;
     backdrop-filter: blur(12px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-    width: 90%;
-    max-width: 450px;
+    flex: 1;
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -28,6 +36,14 @@ h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
     color: #00d4ff;
+}
+
+/* Embedded form */
+.embedded-form {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Form styling */
