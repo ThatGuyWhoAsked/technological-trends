@@ -5,6 +5,7 @@
     --bg-color: #0a0a0f;
     --text-color: #e0e0e0;
     --text-muted: #ccc;
+    --interactive-bg-color: rgba(30, 30, 47, 1);
     --font-stack: 'Segoe UI', system-ui, -apple-system, sans-serif;
 }
 
@@ -15,6 +16,7 @@
     --text-muted: #666666;
     --primary-color: #0077ff;
     --primary-hover: #0055cc;
+    --interactive-bg-color: rgba(240, 242, 247, 0.8);
 }
 
 * {
@@ -471,7 +473,7 @@ a:hover, a:focus-visible {
     z-index: -1; /* Places it behind all content */
     background: radial-gradient(
         800px circle at var(--mouse-x, -1000px) var(--mouse-y, -1000px),
-        rgba(30, 30, 47, 1),
+        var(--interactive-bg-color),
         transparent 40%
     );
 }
