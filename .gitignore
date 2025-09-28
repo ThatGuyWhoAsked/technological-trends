@@ -23,3 +23,4 @@ public/
 # Local development
 .cache/
 .sass-cache/
+.aider*
