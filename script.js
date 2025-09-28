@@ -80,11 +80,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Cleanup function
-    return () => {
+    const cleanup = () => {
         document.removeEventListener('mousemove', handleMouseMove);
         document.body.removeEventListener('mouseenter', handleHover, true);
         document.body.removeEventListener('mouseleave', handleHover, true);
         document.body.removeEventListener('focusin', handleHover, true);
         document.body.removeEventListener('focusout', handleHover, true);
     };
+
+    // Add cleanup on page unload
+    window.addEventListener('beforeunload', cleanup);
 });
